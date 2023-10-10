@@ -10,7 +10,7 @@ void test(){
     c_sock = socket(AF_INET,SOCK_DGRAM,0); //Last param is for raw sockets since we ain't using one nothing to mention
     if(c_sock>0){
         //if the socket created successfully it returns non negative num
-        std::cout<<"Socket created successfully"<<std::endl;
+        std::cout<<"Socket created successfully 1"<<std::endl;
         struct sockaddr_in serv_address;
         serv_address.sin_addr.s_addr = inet_addr("10.0.2.15");
         serv_address.sin_family = AF_INET;
@@ -44,7 +44,7 @@ void test1(){
     c_sock = socket(AF_INET,SOCK_DGRAM,0); //Last param is for raw sockets since we ain't using one nothing to mention
     if(c_sock>0){
         //if the socket created successfully it returns non negative num
-        std::cout<<"Socket created successfully"<<std::endl;
+        std::cout<<"Socket created successfully 2"<<std::endl;
         struct sockaddr_in serv_address;
         serv_address.sin_addr.s_addr = inet_addr("10.0.2.15");
         serv_address.sin_family = AF_INET;
